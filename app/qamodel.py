@@ -1,5 +1,5 @@
 import nltk
-nltk.download('all')
+#nltk.download('all')
 import re
 import string
 import gensim 
@@ -15,9 +15,9 @@ from pandas import DataFrame
 from nltk.corpus import wordnet,stopwords
 import spacy
 
-nltk.download('punkt')
-nltk.download('averaged_perceptron_tagger')
-sample = open("wikipedia.txt", "r")
+#nltk.download('punkt')
+#nltk.download('averaged_perceptron_tagger')
+sample = open("app/wikipedia.txt", "r")
 s = sample.read() 
 s=s.replace("COVID 19","coronavirus")
 def stem_sentence(sentence):
